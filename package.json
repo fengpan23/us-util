@@ -15,10 +15,8 @@
     "url": "git+https://github.com/fengpan23/us-util.git"
   },
   "keywords": [
-    "react",
-    "component",
-    "place",
-    "check"
+    "us",
+    "util"
   ],
   "author": "pan.feng@uprightlaw.biz",
   "license": "ISC",
@@ -31,8 +29,6 @@
     "babel-loader": "^7.1.1",
     "babel-polyfill": "^6.23.0",
     "babel-preset-es2015": "^6.24.1",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
     "webpack": "^3.3.0"
   }
 }
