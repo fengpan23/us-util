@@ -24,3 +24,7 @@ assert.deepEqual(numberStr1, '12,345');
 
 const numberStr2 = util.splitNumber(10345.235);
 assert.deepEqual(numberStr2, '10,345.235');
+
+assert.deepEqual(true, util.isUsZipCode(12345));
+assert.deepEqual(true, util.isUsZipCode('12345'));
+assert.deepEqual(false, util.isUsZipCode('123456'));
