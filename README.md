@@ -9,10 +9,8 @@ npm install us-util --save
 ## formatPhoneNumber
 
 * format phone number (length = 10)
-* 
 * eg: 
 *   1212121212  =>  (121) 212-1212
-*   
 * @param  {Number} input  need format number   
 * @return {String} 
 
@@ -38,7 +36,7 @@ npm install us-util --save
 ## getStateRemind 
 * find us state where match input
 * eg:
-*     MI =>  [ 'Michigan', 'Federated States Of Micronesia', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri', 'Wyomin' ]
+* MI =>  [ 'Michigan', 'Federated States Of Micronesia', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri', 'Wyomin' ]
 * @param  {String} input 
 * @return {Array}       []
 
