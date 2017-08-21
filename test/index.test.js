@@ -28,3 +28,8 @@ assert.deepEqual(numberStr2, '10,345.235');
 assert.deepEqual(true, util.isUsZipCode(12345));
 assert.deepEqual(true, util.isUsZipCode('12345'));
 assert.deepEqual(false, util.isUsZipCode('123456'));
+
+// formatPhoneNumber
+
+assert.deepEqual('(121) 212', util.formatPhoneNumber(121212));
+assert.deepEqual('(121) 212-1212', util.formatPhoneNumber(1212121212));
