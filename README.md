@@ -58,3 +58,8 @@ npm install us-util --save
 * is us zip code
 * @param  {String | Number}  input
 * @return {Boolean}
+
+## generateId
+
+* Generates a RFC-4122 version 4 compliant globally unique identifier.
+* @return {String}
