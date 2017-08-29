@@ -63,3 +63,8 @@ npm install us-util --save
 
 * Generates a RFC-4122 version 4 compliant globally unique identifier.
 * @return {String}
+
+## is email
+* is email
+* @param  {String}  input
+* @return {Boolean}

@@ -35,3 +35,6 @@ assert.deepEqual('(121) 212-1212', util.formatPhoneNumber(1212121212));
 
 //generateId
 assert.deepEqual(36, util.generateId().length);
+
+//isEmail
+assert.deepEqual(true, util.isEmail('test@email.com'));
