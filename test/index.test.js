@@ -36,5 +36,19 @@ assert.deepEqual('(121) 212-1212', util.formatPhoneNumber(1212121212));
 //generateId
 assert.deepEqual(36, util.generateId().length);
 
+//clearNumber
+assert.deepEqual('123221', util.clearNumber('123 221'));
+assert.deepEqual('221', util.clearNumber('abcd 221 abcd'));
+
 //isEmail
 assert.deepEqual(true, util.isEmail('test@email.com'));
+
+//isUsCard
+assert.deepEqual(true, util.isUsCard('4111111111111111'));
+assert.deepEqual(true, util.isUsCard('3782 8224 6310 005'));
+
+//getUsCardType
+// assert.deepEqual('Visa', util.getUsCardType('4111111111111111'));
+assert.deepEqual('American Express', util.getUsCardType('3 782 8224 6310 005'));
+assert.deepEqual('Master Card', util.getUsCardType('5569755825672968'));
+assert.deepEqual('Visa', util.getUsCardType('4532421174341278'));

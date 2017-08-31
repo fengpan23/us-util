@@ -64,7 +64,23 @@ npm install us-util --save
 * Generates a RFC-4122 version 4 compliant globally unique identifier.
 * @return {String}
 
-## is email
+## isEmail
 * is email
 * @param  {String}  input
 * @return {Boolean}
+
+## clearNumber
+* clear number
+* @param  {string}
+* @return {string}       only number
+* eg: '1234 1212 sdf' => 12341212
+
+## getUsCardType
+* get us card type
+* @param  {String} input 
+* @return {String}      	on of card type
+
+## isUsCard
+* is us card check
+* @param  {String}  input 
+* @return {Boolean}  
