@@ -1,6 +1,6 @@
 {
   "name": "us-util",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "us util",
   "main": "./lib/index.js",
   "scripts": {
@@ -14,7 +14,8 @@
   },
   "keywords": [
     "us",
-    "util"
+    "util",
+    "card type"
   ],
   "author": "pan.feng@uprightlaw.biz",
   "license": "ISC",
