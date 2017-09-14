@@ -19,6 +19,13 @@ assert.deepEqual(state4, true);
 const state5 = util.isUsState('cO');
 assert.deepEqual(state5, true);
 
+// isNumber
+assert.deepEqual(false, util.isNumber('1212121a'));
+assert.deepEqual(true, util.isNumber('-12.12'));
+assert.deepEqual(false, util.isNumber('-.123'));
+assert.deepEqual(true, util.isNumber('-1.123'));
+assert.deepEqual(true, util.isNumber('121212'));
+
 const numberStr1 = util.splitNumber(12345);
 assert.deepEqual(numberStr1, '12,345');
 
