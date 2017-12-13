@@ -2,9 +2,9 @@ const assert = require('assert');
 const util = require('../lib/');
 
 const remindList = util.getStateRemind('MI');
-assert.equal(remindList.join(), [ 'Michigan', 'Federated States Of Micronesia', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri', 'Wyoming' ].join());
+assert.equal(remindList.join(), [ 'Michigan', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri', 'Wyoming' ].join());
 
-const state1 = util.isUsState('arizona');
+const state1 = util.isUsState('Arizona');
 assert.deepEqual(state1, true);
 
 const state2 = util.isUsState('ChangSha');
@@ -18,6 +18,9 @@ assert.deepEqual(state4, true);
 
 const state5 = util.isUsState('cO');
 assert.deepEqual(state5, true);
+
+const state6 = util.isUsState('Washington DC');
+assert.deepEqual(state6, true);
 
 // isNumber
 assert.deepEqual(false, util.isNumber('1212121a'));
