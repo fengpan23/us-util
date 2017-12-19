@@ -40,6 +40,20 @@ npm install us-util --save
 * @param  {String} input 
 * @return {Array}       []
 
+## getLongState 
+* get long state
+* eg:
+* MI =>  'Michigan'
+* @param  {string} short state
+* @return {string} long state
+
+## getShortState 
+* get short state
+* eg:
+* 'Michigan' => 'MI'
+* @param  {string} short state
+* @return {string} long state
+
 ## isUsState
 
 * is United States  state

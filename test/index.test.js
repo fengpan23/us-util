@@ -46,6 +46,14 @@ assert.deepEqual('(121) 212-1212', util.formatPhoneNumber(1212121212));
 //generateId
 assert.deepEqual(36, util.generateId().length);
 
+//getShortState
+assert.deepEqual('AL', util.getShortState('Alabama'));
+assert.deepEqual('MI', util.getShortState('Michigan'));
+
+//getShortState
+assert.deepEqual('Alabama', util.getLongState('AL'));
+assert.deepEqual('Michigan', util.getLongState('MI'));
+
 //clearNumber
 assert.deepEqual('123221', util.clearNumber('123 221'));
 assert.deepEqual('221', util.clearNumber('abcd 221 abcd'));
