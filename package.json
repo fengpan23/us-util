@@ -1,6 +1,6 @@
 {
   "name": "us-util",
-  "version": "1.2.10",
+  "version": "1.2.11",
   "description": "us util",
   "main": "./lib/index.js",
   "scripts": {
