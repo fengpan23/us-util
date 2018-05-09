@@ -70,3 +70,12 @@ assert.deepEqual(true, util.isUsCard('3782 8224 6310 005'));
 assert.deepEqual('American Express', util.getUsCardType('3 782 8224 6310 005'));
 assert.deepEqual('Master Card', util.getUsCardType('5569755825672968'));
 assert.deepEqual('Visa', util.getUsCardType('4532421174341278'));
+
+// parseToNumber
+assert.deepEqual(12, util.parseToNumber('12'));
+assert.deepEqual(12.34, util.parseToNumber('12.3412'));
+
+// stringifyUSD
+assert.deepEqual('$12.34', util.stringifyUSD('12.3412'));
+assert.deepEqual('$12.34', util.stringifyUSD('12.3412'));
+assert.deepEqual('$123,412', util.stringifyUSD('123412'));
